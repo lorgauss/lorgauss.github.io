@@ -53,3 +53,20 @@
         opacity: 0;
     }
 }
+.loader-freez{
+    margin: 0; 
+    height: 100%; 
+    animation: loading-overflow 3s;
+}
+
+@keyframes loading-overflow {
+   from{
+        overflow: hidden;
+    }
+    99%{
+        overflow: hidden;
+    }
+    to{
+        overflow: visible;
+    }    
+}
