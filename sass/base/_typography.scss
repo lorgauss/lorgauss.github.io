@@ -1,0 +1,54 @@
+input{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+}
+input::placeholder{
+    color: $lightblack;
+}
+
+h1{
+    @include shr-font;
+    font-size: 38px;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    font-family: Roboto;
+}
+
+i{
+    font-size: 20px;
+    color: $lightblack;
+}
+
+.heart_ico{
+    font-size: 30px;
+    transform: scaleY(1.15);
+    -webkit-text-stroke: 1px $grey;
+}
