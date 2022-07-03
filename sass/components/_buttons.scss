@@ -1,23 +1,25 @@
 // --- Main Button --- With effect ---
 .button_gradiant{
     display: flex;
-    background: linear-gradient(175deg, $pink 0%, $violet 100%);
-    border-radius: 40px;
-    height: 65px;
-    width: 270px;
     align-items: center;
     justify-content: center;
-    color: $white;
+    height: 65px;
+    width: 270px;
+    text-decoration: none;
     @include rob-font;
     font-size: 20px;
     font-weight: 400;
+    color: $white;
+    background: linear-gradient(175deg, $pink 0%, $violet 100%);
+    border-radius: 40px;
+
     box-shadow: inset 0px 0px 0px $transpwhite, inset 0px 0px 0px $transpwhite,  0 5px 10px $darkergrey;
     scale: 1;
-    text-decoration: none;
 
     transition-property: box-shadow, scale;
     transition-duration: 0.2s;
 }
+
 .button_gradiant:hover{
     box-shadow: inset 1px 1px 45px $transpwhite, inset -1px -1px 45px $transpwhite,  0 5px 8px $darkestgrey;
     scale: 0.95;
