@@ -42,13 +42,9 @@ span{
     font-family: Roboto;
 }
 
-i{
-    font-size: 20px;
-    color: $lightblack;
-}
-
 .heart_ico{
     font-size: 30px;
     transform: scaleY(1.15);
-    -webkit-text-stroke: 1px $grey;
+    -webkit-text-stroke: 2px $lighterblack;
+    color: $white;
 }
