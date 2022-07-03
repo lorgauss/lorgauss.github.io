@@ -246,6 +246,48 @@ footer ul li a i {
     background-image: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
   }
 }
+.menu_item:hover .menu_item_info {
+  width: calc(100% - 75px);
+  animation: add_item_shrink 0.4s cubic-bezier(0, 0.37, 0.85, 1.03);
+}
+.menu_item:hover .menu_item_check {
+  display: flex;
+  width: 75px;
+  animation: add_item_expend 0.4s cubic-bezier(0, 0.37, 0.85, 1.03);
+}
+.menu_item:hover .menu_item_check i {
+  animation: add_item_rotate 0.4s cubic-bezier(0, 0.37, 0.85, 1.03);
+}
+
+@keyframes add_item_shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: calc(100% - 75px);
+  }
+}
+@keyframes add_item_expend {
+  from {
+    display: flex;
+    width: 0px;
+  }
+  to {
+    display: flex;
+    width: 75px;
+  }
+}
+@keyframes add_item_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .background_lpdg {
   background-image: url("/assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
@@ -586,10 +628,12 @@ main {
 .menu_item {
   display: flex;
   flex-flow: row;
+  overflow: hidden;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(255, 255, 255);
   width: 95%;
+  height: 75px;
   border-radius: 20px;
   margin-block-end: 20px;
   box-shadow: 0 2px 10px rgb(200, 200, 200);
@@ -598,28 +642,52 @@ main {
 .menu_item_info {
   display: flex;
   flex-flow: row;
-  width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+  width: 100%;
   padding-block: 15px;
   padding-inline: 20px;
 }
+.menu_item_info div {
+  display: flex;
+  flex-flow: column;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .menu_item_info div h3 {
   margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu_item_info div p {
   font-size: 18px;
   font-weight: 500;
   color: rgb(75, 75, 75);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu_item_info span {
   font-weight: 800;
   font-size: 20px;
   color: rgb(75, 75, 75);
+  padding-left: 10px;
 }
 
 .menu_item_check {
   display: none;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 100%;
+  width: 0;
+  background-color: #99E2D0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  align-items: center;
+}
+.menu_item_check i {
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  padding: 25px;
 }
 
 .menu_placeorder {
