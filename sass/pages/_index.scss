@@ -68,40 +68,6 @@ main{
     margin-block: 40px;
 }
 
-.howto_tag{
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    width: 95%;
-    height: 85px;
-    background-color: $grey;
-    border-radius: 25px;
-    box-shadow: 0 5px 10px $darkergrey;
-    i{
-        font-size: 24px;
-        color: $lighterblack;
-        margin-inline: 25px;
-    }
-}
-
-.howto_tag_number{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    background-color: $violet;
-    font-size: 20px;
-    color: $white;
-    margin-inline-start: -15px;
-}
-
-.howto_tag_text{
-    font-size: 20px;
-    font-weight: 700;
-}
-
 
 
 #catalog{

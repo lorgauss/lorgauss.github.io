@@ -354,6 +354,47 @@ footer ul li a i {
     overflow: visible;
   }
 }
+.howto_tag {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 95%;
+  height: 85px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgb(200, 200, 200);
+}
+.howto_tag i {
+  font-size: 24px;
+  color: rgb(100, 100, 100);
+  margin-inline: 25px;
+}
+
+.howto_tag_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #9356DC;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-inline-start: -15px;
+}
+
+.howto_tag_text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.how_to_pink_tag {
+  background-color: #f5eeff;
+}
+.how_to_pink_tag i {
+  color: #9356DC;
+}
+
 .tag_new {
   height: fit-content;
   background-color: #99E2D0;
@@ -434,40 +475,6 @@ main {
   width: 100%;
   height: 340px;
   margin-block: 40px;
-}
-
-.howto_tag {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  width: 95%;
-  height: 85px;
-  background-color: rgb(245, 245, 245);
-  border-radius: 25px;
-  box-shadow: 0 5px 10px rgb(200, 200, 200);
-}
-.howto_tag i {
-  font-size: 24px;
-  color: rgb(100, 100, 100);
-  margin-inline: 25px;
-}
-
-.howto_tag_number {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #9356DC;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-  margin-inline-start: -15px;
-}
-
-.howto_tag_text {
-  font-size: 20px;
-  font-weight: 700;
 }
 
 #catalog {
