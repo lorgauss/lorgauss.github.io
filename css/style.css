@@ -248,35 +248,14 @@ footer ul li a i {
 }
 .menu_item:hover .menu_item_info {
   width: calc(100% - 75px);
-  animation: add_item_shrink 0.4s cubic-bezier(0, 0.37, 0.85, 1.03);
 }
 .menu_item:hover .menu_item_check {
-  display: flex;
   width: 75px;
-  animation: add_item_expend 0.4s cubic-bezier(0, 0.37, 0.85, 1.03);
 }
 .menu_item:hover .menu_item_check i {
   animation: add_item_rotate 0.4s cubic-bezier(0, 0.37, 0.85, 1.03);
 }
 
-@keyframes add_item_shrink {
-  from {
-    width: 100%;
-  }
-  to {
-    width: calc(100% - 75px);
-  }
-}
-@keyframes add_item_expend {
-  from {
-    display: flex;
-    width: 0px;
-  }
-  to {
-    display: flex;
-    width: 75px;
-  }
-}
 @keyframes add_item_rotate {
   from {
     transform: rotate(0deg);
@@ -647,6 +626,9 @@ main {
   width: 100%;
   padding-block: 15px;
   padding-inline: 20px;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0, 0.37, 0.85, 1.03);
 }
 .menu_item_info div {
   display: flex;
@@ -674,7 +656,7 @@ main {
 }
 
 .menu_item_check {
-  display: none;
+  display: flex;
   white-space: nowrap;
   overflow: hidden;
   height: 100%;
@@ -683,6 +665,9 @@ main {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   align-items: center;
+  transition-property: width;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0, 0.37, 0.85, 1.03);
 }
 .menu_item_check i {
   font-size: 28px;

@@ -80,6 +80,10 @@
     width: 100%;
     padding-block: 15px;
     padding-inline: 20px;
+
+    transition-property: width;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0,.37,.85,1.03);
     div{
         display: flex;
         flex-flow: column;
@@ -107,7 +111,7 @@
 }
 
 .menu_item_check{
-    display: none;
+    display: flex;
     white-space: nowrap;
     overflow: hidden;
     height: 100%;
@@ -116,6 +120,9 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     align-items: center;
+    transition-property: width;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0,.37,.85,1.03);
     i{
         font-size: 28px;
         color: $white;

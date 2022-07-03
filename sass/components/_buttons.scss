@@ -124,37 +124,15 @@
 .menu_item:hover{
     .menu_item_info{
         width: calc(100% - 75px);
-        animation: add_item_shrink 0.4s cubic-bezier(0,.37,.85,1.03);
     }
     .menu_item_check{
-        display: flex;
         width: 75px;
-        animation: add_item_expend 0.4s cubic-bezier(0,.37,.85,1.03);
         i{
             animation: add_item_rotate 0.4s cubic-bezier(0,.37,.85,1.03);
         }
     }
 }
 
-@keyframes add_item_shrink {
-    from{
-        width: 100%;
-    }
-    to{
-        width: calc(100% - 75px);
-    }    
-}
-
-@keyframes add_item_expend {
-    from{
-        display: flex;
-        width: 0px;
-    }
-    to{
-        display: flex;
-        width: 75px;
-    }
-}
 @keyframes add_item_rotate{
     from{
         transform: rotate(0deg);
