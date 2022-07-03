@@ -1,3 +1,4 @@
+// --- Main Button --- With effect ---
 .button_gradiant{
     display: flex;
     background: linear-gradient(175deg, $pink 0%, $violet 100%);
@@ -13,7 +14,26 @@
     box-shadow: 0 5px 10px $darkergrey;
     text-decoration: none;
 }
+.button_gradiant:hover{
+    box-shadow: inset 1px 1px 45px $transpwhite, inset -1px -1px 45px $transpwhite,  0 5px 8px $darkestgrey;
+    scale: 0.95;
+    animation: main_button 0.2s ease-in;
+}
 
+@keyframes main_button {
+    from{
+        box-shadow: inset 0px 0px 0px $transpwhite, inset 0px 0px 0px $transpwhite,  0 5px 10px $darkergrey;
+        scale: 1;
+    }
+    10%{
+        box-shadow: inset 1px 1px 20px $transpwhite, inset 1px 1px 20px $transpwhite,  0 5px 8px $darkergrey;
+        scale: 0.96;
+    }
+    to{
+        box-shadow: inset 1px 1px 45px $transpwhite, inset -1px -1px 45px $transpwhite,  0 5px 8px $darkestgrey;
+        scale: 0.95;
+    }
+}
 
 // --- Favorit Button --- Heart Filling effect --- 
 

@@ -145,6 +145,26 @@ footer ul li a i {
   text-decoration: none;
 }
 
+.button_gradiant:hover {
+  box-shadow: inset 1px 1px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 45px rgba(255, 255, 255, 0.1), 0 5px 8px rgb(165, 165, 165);
+  scale: 0.95;
+  animation: main_button 0.2s ease-in;
+}
+
+@keyframes main_button {
+  from {
+    box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 0.1), inset 0px 0px 0px rgba(255, 255, 255, 0.1), 0 5px 10px rgb(200, 200, 200);
+    scale: 1;
+  }
+  10% {
+    box-shadow: inset 1px 1px 20px rgba(255, 255, 255, 0.1), inset 1px 1px 20px rgba(255, 255, 255, 0.1), 0 5px 8px rgb(200, 200, 200);
+    scale: 0.96;
+  }
+  to {
+    box-shadow: inset 1px 1px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 45px rgba(255, 255, 255, 0.1), 0 5px 8px rgb(165, 165, 165);
+    scale: 0.95;
+  }
+}
 .favorit_button:hover {
   background-image: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
