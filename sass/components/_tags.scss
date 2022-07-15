@@ -51,3 +51,10 @@
         padding-inline: 15px;
         margin: 20px;
 }
+
+
+@media (min-width: 500px){
+    .howto_tag{
+        max-width: 600px;
+    }
+}

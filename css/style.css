@@ -409,6 +409,11 @@ footer ul li a i {
   margin: 20px;
 }
 
+@media (min-width: 500px) {
+  .howto_tag {
+    max-width: 600px;
+  }
+}
 main {
   display: flex;
   flex-flow: column;
@@ -551,16 +556,20 @@ article {
   color: rgb(75, 75, 75);
 }
 
-.menu_display {
-  display: flex;
-  background-position: top;
-  background-size: auto 350px;
-  width: 100%;
-  height: 380px;
-  align-items: flex-end;
+@media (min-width: 500px) {
+  #howto_container {
+    align-items: start;
+    padding-inline-start: 7%;
+  }
+  #catalog_container {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .catalog_container_card {
+    width: 400px;
+  }
 }
-
-.menu_display-portrait {
+.menu_display {
   display: flex;
   background-position: center;
   background-size: cover;
@@ -583,6 +592,14 @@ article {
 }
 .menu_display_head i {
   padding: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  justify-content: space-around;
 }
 
 .menu_group {
@@ -722,6 +739,20 @@ article {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+@media (min-width: 500px) {
+  .menu {
+    flex-flow: row wrap;
+  }
+  .menu_group {
+    max-width: 500px;
+  }
+  .menu_group_container {
+    max-width: 525px;
+  }
+  .menu_item {
+    max-width: 500px;
   }
 }
 

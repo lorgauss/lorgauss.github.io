@@ -141,3 +141,19 @@ article{
         }
     }
 }
+
+@media (min-width: 500px){
+
+    #howto_container{
+        align-items: start;
+        padding-inline-start: 7%;
+    }
+
+    #catalog_container{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .catalog_container_card{
+        width: 400px;
+    }
+}
