@@ -175,6 +175,13 @@
 
 
 @media (min-width: 500px){
+    .menu_display_head{
+        justify-content: start;
+        padding-inline-start: 5%;
+        i{
+            margin-inline-start: 25px;
+        }
+    }
     .menu{
         flex-flow: row wrap;
     }
