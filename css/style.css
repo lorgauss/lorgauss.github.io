@@ -150,14 +150,12 @@ footer ul li a i {
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   border-radius: 40px;
   box-shadow: inset 0px 0px 0px rgba(255, 255, 255, 0.1), inset 0px 0px 0px rgba(255, 255, 255, 0.1), 0 5px 10px rgb(200, 200, 200);
-  scale: 1;
   transition-property: box-shadow, scale;
   transition-duration: 0.2s;
 }
 
 .button_gradiant:hover {
   box-shadow: inset 1px 1px 45px rgba(255, 255, 255, 0.1), inset -1px -1px 45px rgba(255, 255, 255, 0.1), 0 5px 8px rgb(165, 165, 165);
-  scale: 0.95;
 }
 
 .favorit_button:hover {

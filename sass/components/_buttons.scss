@@ -14,7 +14,6 @@
     border-radius: 40px;
 
     box-shadow: inset 0px 0px 0px $transpwhite, inset 0px 0px 0px $transpwhite,  0 5px 10px $darkergrey;
-    scale: 1;
 
     transition-property: box-shadow, scale;
     transition-duration: 0.2s;
@@ -22,7 +21,6 @@
 
 .button_gradiant:hover{
     box-shadow: inset 1px 1px 45px $transpwhite, inset -1px -1px 45px $transpwhite,  0 5px 8px $darkestgrey;
-    scale: 0.95;
 }
 
 // --- Favorit Button --- Heart Filling effect --- 
